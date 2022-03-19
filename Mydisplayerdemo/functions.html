@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>Do a calculation and then display the result.</p>
+
+<p id="demo"></p>
+
+<p2 id="demo2"></p2>
+
+<p2 id="demo3"></p2>
+
+<script>
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+function myCalculator(num1, num2) {
+  let sum = num1 + num2;
+  return sum;
+}
+
+let result = myCalculator(5, 5);
+myDisplayer(result);
+
+
+// recommended method:
+function myDisplayer2(some) {
+  document.getElementById("demo2").innerHTML = some;
+}
+
+function myCalculator2(num1, num2) {
+  let sum = num1 + num2;
+  myDisplayer2(sum);
+}
+
+myCalculator2(5, 6);
+
+
+// with callback,A callback is a function passed as an argument to another function.
+function myDisplayer3(something) {
+  document.getElementById("demo3").innerHTML = something;
+}
+
+function myCalculator3(num1, num2, myCallback) {
+  let sum = num1 + num2;
+  myCallback(sum);
+}
+
+myCalculator3(6, 6, myDisplayer3);
+
+</script>
+
+</body>
+</html>

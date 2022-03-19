@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="reset.css" />  <!--check reset path-->
+   <link rel="stylesheet" href="Cheatsheet.css"> <!--check style path-->
+   <Title></Title>
+ </head>
+ <body>
+    <h1>mydisplayer</h1>
+    <p id="demo">Script not working <img src="https://c.tenor.com/4iqJFHzJIDsAAAAC/cat-scream.gif" alt="coding cat"></p>
+    <script>
+        function myDisplayer(some) {
+          document.getElementById("demo").innerHTML = some;
+        }
+        
+        function myFirst() {
+          myDisplayer("Hello");
+        }
+        
+        function mySecond() {
+            var img =new Image();
+          myDisplayer("Script working, goodbye")
+          img.src = "https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif";
+            document.getElementById("demo").appendChild(img)
+        }
+       //myFirst()   
+       mySecond() 
+    </script>
+ </body>
+</html>
+             
+<!-- used to append image to html -->
+
+<!--img.src = 
+'https://media.geeksforgeeks.org/wp-content/uploads/20190529122828/bs21.png';
+            document.getElementById('body').appendChild(img);
+            down.innerHTML = "Image Element Added.";
+
+Image.innerHTML = '"https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="coding cat">' -->
