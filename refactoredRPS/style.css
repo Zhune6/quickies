@@ -1,0 +1,39 @@
+h1{
+    border: 5px;
+    border-style: double;
+    border-color: blueviolet;
+    width: fit-content;
+}
+.containertitle{
+    border-style: ridge;
+}
+h2{ 
+    size: 20px;
+    color: black
+}
+
+.title {
+    color: black;
+}
+body{
+    background-color: rgb(213, 215, 223);
+}
+.conditions { 
+    border: 5px;
+    border-style: double;
+    border-color: blueviolet;
+    color: black;
+} 
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    background-color: grey
+}
+
+.wins {
+    color: red;
+}

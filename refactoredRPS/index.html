@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Thanks for playing!</h1>
+  <!--<p id="pitoaqui"></p>-->
+
+  <div class="container">
+    <div class="score">
+      <div class="title">
+       <h1 class ="containertitle"> Scoreboard</h1>
+      </div>
+      <div class="wins conditions">
+      <h2> wins: <span id="wins">0</span></h2>
+      </div>
+      <div class="loses conditions">
+        <h2>loses: <span id="losses">0</span></h2>
+      </div>
+      <div class="ties conditions">
+        <h2>ties : <span id="ties">0</span></h2>
+      </div>
+      <div class="testing">
+        <h2>testing: <span id="displaytest"></span></h2>
+      </div>
+
+    </div>
+  </div>
+  <div class="container interface">
+    <div class="box interface">
+      <div class="title">
+        <h1 class="interfacetitle"> Game interface</h1>
+      </div>
+      <div class="options">
+        <label>choose R, P or S
+          <select id="options">
+            <option value="R">R</option>
+            <option value="P">P</option>
+            <option value="S">S</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
